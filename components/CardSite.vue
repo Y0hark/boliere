@@ -9,7 +9,7 @@
           <p class="copy">
             {{ description }}
           </p>
-          <a class="btn btn-link" :href="buttonLink" target="_blank"> {{ buttonTitle }} </a>
+          <a class="btn" :href="buttonLink" target="_blank"> {{ buttonTitle }} </a>
         </div>
       </div>
     </div>
@@ -34,17 +34,13 @@ export default {
   --font-serif: 'Noto Serif';
 }
 
-.btn-link {
-    text-decoration: none;
-    font-weight: normal;
-}
-
 .card-content-site {
   position: relative;
   font-family: var(--font-sans);
 }
 
 .card-component-site {
+  position: relative;
   min-height: 60vh;
   max-width: 50vw;
   min-width: 50vw;
@@ -55,6 +51,11 @@ export default {
   text-align: center;
   color: rgb(255, 255, 255);
   background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+    0 2px 2px rgba(0,0,0,0.1),
+    0 4px 4px rgba(0,0,0,0.1),
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
 
   &:before {
     content: '';
@@ -86,8 +87,6 @@ export default {
       hsla(0, 0%, 0%, 0.072) 31.2%,
       hsla(0, 0%, 0%, 0.123) 39.4%,
       hsla(0, 0%, 0%, 0.182) 46.6%,
-      hsla(0, 0%, 0%, 0.250) 48.6%,
-      hsla(0, 0%, 0%, 0.450) 50.6%,
       hsla(0, 0%, 0%, 0.950) 53.1%,
       hsla(0, 0%, 0%, 0.950) 58.9%,
       hsla(0, 0%, 0%, 0.950) 64.3%,
@@ -97,7 +96,7 @@ export default {
       hsla(0, 0%, 0%, 0.950) 83.6%,
       hsla(0, 0%, 0%, 0.950) 88.7%,
       hsla(0, 0%, 0%, 0.950) 94.1%,
-      rgba(0, 0, 0, 1) 100%
+      hsla(0, 0%, 0%, 0.950) 100%
     );
     transform: translateY(-50%);
     transition: transform calc(var(--d) * 2) var(--e);
@@ -128,6 +127,13 @@ export default {
 
   @media screen and (min-width: 1150px) {
     .card-component-site {
+      max-width: 30vw;
+      min-width: 30vw;
+    }
+  }
+
+  @media screen and (min-width: 1450px) {
+    .card-component-site {
       max-width: 50vw;
       min-width: 50vw;
     }
@@ -147,10 +153,11 @@ export default {
     margin-top: 1rem;
   }
 }
-.title-card {
-    font-size: 1.3rem;
-    font-weight: bold;
-    line-height: 1.2;
+
+.titleCard {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .copy {
@@ -162,10 +169,12 @@ export default {
 }
 
 .btn {
+  text-decoration: none;
   cursor: pointer;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
   font-size: 0.65rem;
+  font-weight: normal;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
@@ -173,7 +182,7 @@ export default {
   border: none;
 
   &:hover {
-    background-color: lighten(rgb(27, 27, 27), 5%);
+    background-color: lighten(rgb(48, 48, 48), 5%);
   }
 
   &:focus {
@@ -189,7 +198,7 @@ export default {
   .content-card-site {
     transform: translateY(calc(100% - 4.5rem));
 
-    > * {
+    > *:not(.titleCard) {
       opacity: 0;
       transform: translateY(1rem);
       transition:
@@ -208,7 +217,7 @@ export default {
     .content-card-site {
       transform: translateY(0);
 
-      > * {
+      > *:not(.titleCard) {
         opacity: 1;
         transform: translateY(0);
         transition-delay: calc(var(--d) / 8);
@@ -220,7 +229,7 @@ export default {
     &:before,
     &:after,
     .content-card-site,
-    .content-card-site > * {
+    .content-card-site > *:not(.titleCard) {
       transition-duration: 0s;
     }
   }

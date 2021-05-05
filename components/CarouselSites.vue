@@ -1,6 +1,6 @@
 <template>
   <div class="carousel">
-    <div v-for="site in list_sites" :key="site.name">
+    <div v-for="site in list_sites" :key="site.name" class="container-site-card fade">
       <card-site
         :id="site.id"
         :title="site.title"
@@ -8,6 +8,8 @@
         :button-link="site.link"
         :button-title="site.btn"
       />
+      <a class="prev" @click="changeSlide(-1)">&#10094;</a>
+      <a class="next" @click="changeSlide(1)">&#10095;</a>
     </div>
   </div>
 </template>
@@ -17,6 +19,7 @@ export default {
   components: { CardSite },
   data () {
     return {
+      slideIndex: 1,
       list_sites: {
         alan_site: {
           id: 'site_alan_garbo',
@@ -40,10 +43,71 @@ export default {
         }
       }
     }
+  },
+  mounted () {
+    this.showSlides(this.slideIndex)
+  },
+  methods: {
+    changeSlide (n) {
+      this.showSlides(this.slideIndex += n)
+    },
+    currentSlide (n) {
+      this.showSlides(this.slideIndex = n)
+    },
+    showSlides (n) {
+      let i
+      const slides = document.getElementsByClassName('container-site-card')
+      if (n > slides.length) { this.slideIndex = 1 }
+      if (n < 1) { this.slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none'
+      }
+      slides[this.slideIndex - 1].style.display = 'block'
+    }
   }
 }
 </script>
 <style>
+* { box-sizing: border-box; }
+
+.carousel {
+  max-width: 50vh;
+  position: relative;
+  margin: auto;
+}
+
+.container-site-card {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  color: white;
+  padding: 5rem;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 #site_alan_garbo .card-component-site {
     background-image: url('~assets/img/alan_site_screen.png');
 }
