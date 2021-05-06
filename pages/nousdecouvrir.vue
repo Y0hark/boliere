@@ -61,7 +61,7 @@ export default {
     }
     .vertical_line {
       display: block;
-      border-right: 3px solid rgba(37, 114, 177, 0.568);
+      border-right: 3px solid #005F82;
       height: 70vh;
     }
     #alan .card-content {

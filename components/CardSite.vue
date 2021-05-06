@@ -9,7 +9,7 @@
           <p class="copy">
             {{ description }}
           </p>
-          <a class="btn" :href="buttonLink" target="_blank"> {{ buttonTitle }} </a>
+          <a class="btn-card-site" :href="buttonLink" target="_blank"> {{ buttonTitle }} </a>
         </div>
       </div>
     </div>
@@ -41,9 +41,10 @@ export default {
 
 .card-component-site {
   position: relative;
-  min-height: 60vh;
-  max-width: 50vw;
-  min-width: 50vw;
+  border-radius: 1%;
+  max-width: 55vw;
+  min-width: 55vw;
+  min-height: 40vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -101,43 +102,20 @@ export default {
     transform: translateY(-50%);
     transition: transform calc(var(--d) * 2) var(--e);
   }
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     }
-  @media screen and (min-width: 768px) {
-    .card-component-site {
-      min-width: 40vw;
-      max-width: 40vw;
-  }
-  }
-  @media screen and (min-width: 850px) {
-    .card-component-site {
-      min-height: 60vh;
-      max-width: 40vw;
-      min-width: 40vw;
+    @media screen and (min-width: 800px) {
+      .card-component-site {
+        min-height: 50vh;
+      }
     }
-  }
-
-  @media screen and (min-width: 1000px) {
-    .card-component-site {
-      max-width: 35vw;
-      min-width: 35vw;
+    @media screen and (min-width: 1000px) {
+      .card-component-site {
+        min-height: 60vh;
+      }
     }
-  }
-
-  @media screen and (min-width: 1150px) {
-    .card-component-site {
-      max-width: 30vw;
-      min-width: 30vw;
-    }
-  }
-
-  @media screen and (min-width: 1450px) {
-    .card-component-site {
-      max-width: 50vw;
-      min-width: 50vw;
-    }
-  }
 
 .content-card-site {
   position: relative;
@@ -168,7 +146,7 @@ export default {
   word-break: break-word;
 }
 
-.btn {
+.btn-card-site {
   text-decoration: none;
   cursor: pointer;
   margin-top: 1.5rem;
@@ -178,11 +156,11 @@ export default {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: rgb(44, 44, 44);
+  background-color: #005f82b6;
   border: none;
 
   &:hover {
-    background-color: lighten(rgb(48, 48, 48), 5%);
+    background-color: lighten(#005f82b6, 5%);
   }
 
   &:focus {

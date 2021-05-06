@@ -1,7 +1,7 @@
 <template>
   <div class="container carousel-container">
-    <div>
-      <h3 class="prestation">
+    <div class="prestations">
+      <h3>
         Nos préstations
       </h3>
     </div>
@@ -33,5 +33,9 @@ export default {
 
 .carousel-container {
   display: block;
+}
+
+.prestations {
+  padding-bottom: 2rem;
 }
 </style>

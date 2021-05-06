@@ -70,12 +70,6 @@ export default {
 <style>
 * { box-sizing: border-box; }
 
-.carousel {
-  max-width: 50vh;
-  position: relative;
-  margin: auto;
-}
-
 .container-site-card {
   display: none;
 }
@@ -83,12 +77,28 @@ export default {
 .prev, .next {
   cursor: pointer;
   color: white;
-  padding: 5rem;
+  padding: 1rem;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+
+@media screen and (min-width: 768px) {
+  .prev, .next {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .prev, .next {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .prev, .next {
+    padding: 5rem;
+  }
 }
 
 .fade {

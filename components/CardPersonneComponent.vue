@@ -8,7 +8,7 @@
           </h2>
           <p class="copy">
             {{ description }}
-          </p><button class="btn">
+          </p><button class="btn-card-person">
             {{ buttonName }}
           </button>
         </div>
@@ -120,6 +120,7 @@ export default {
     .card-component {
       min-width: 40vw;
       max-width: 40vw;
+      border-radius: 5%;
   }
   }
   @media screen and (min-width: 850px) {
@@ -180,7 +181,7 @@ export default {
   word-break: break-word;
 }
 
-.btn {
+.btn-card-person {
   cursor: pointer;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
@@ -189,11 +190,11 @@ export default {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: black;
+  background-color: #005f82b6;
   border: none;
 
   &:hover {
-    background-color: lighten(black, 5%);
+    background-color: lighten(#005f82b6, 5%);
   }
 
   &:focus {

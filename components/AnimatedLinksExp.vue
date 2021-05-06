@@ -40,7 +40,7 @@ export default {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255); }
+    50% { border-color: #005F82; }
   }
   .link {
     text-decoration: none;
