@@ -3,25 +3,14 @@
     <h4>Formulaire de contact</h4>
     <form>
       <div class="user-box">
-        <input type="text" name="name" required>
-        <label>Nom et prénom</label>
-      </div>
-      <div class="user-box">
-        <input type="email" name="email" required>
-        <label>Votre adresse email</label>
-      </div>
-      <div class="user-box">
-        <input type="text" name="object" required>
+        <input id="object" type="text" name="object" required>
         <label>Objet du message</label>
       </div>
       <div class="user-box">
         <textarea id="message" name="message" cols="60" rows="4" required />
         <label>Votre message</label>
       </div>
-      <a
-        type="submit"
-        href="#"
-      >
+      <a @click="sendMail">
         <span />
         <span />
         <span />
@@ -33,7 +22,13 @@
 </template>
 <script>
 export default {
-
+  methods: {
+    sendMail () {
+      const mailObject = document.querySelector('#object').value
+      const mailMessage = document.querySelector('#message').value
+      window.open(`mailto:samuelgaliere.pro@gmail.com?subject=${mailObject}&body=${mailMessage}`)
+    }
+  }
 }
 </script>
 <style>
