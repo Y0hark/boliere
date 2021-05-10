@@ -26,7 +26,7 @@ export default {
     sendMail () {
       const mailObject = document.querySelector('#object').value
       const mailMessage = document.querySelector('#message').value
-      window.open(`mailto:samuelgaliere.pro@gmail.com?subject=${mailObject}&body=${mailMessage}`)
+      window.open(`mailto:samuelgaliere.pro@gmail.com,garbo.alan@gmail.com?subject=${mailObject}&body=${mailMessage}`)
     }
   }
 }
