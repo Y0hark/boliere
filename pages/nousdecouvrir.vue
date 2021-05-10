@@ -49,7 +49,7 @@ export default {
       background-image: url('~assets/img/alan2021.jpg');
     }
     #sammy .card-component {
-      background-image: url('~assets/img/samuel_pic.jpeg');
+      background-image: url('~assets/img/samuel_pic_final.jpg');
     }
 
     @media screen and (min-width: 768px) {

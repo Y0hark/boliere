@@ -28,7 +28,7 @@ export default {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .carousel-container {
