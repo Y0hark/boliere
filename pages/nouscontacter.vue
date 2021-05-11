@@ -2,9 +2,18 @@
   <div class="container">
     <div>
       <div>
-        <h3 class="subtitle">
-          Nous contacter
-        </h3>
+        <div>
+          <h3 class="subtitle">
+            Nous contacter
+          </h3>
+        </div>
+      </div>
+      <div class="contains-text">
+        <p>
+          Les réponses les plus rapides aux questions les plus simples vous seront données par notre assistant virtuel Willy. <br>
+          Si jamais il ne peut vous répondre, il vous renverra automatiquement vers nous. <br><br>
+          Vous pouvez bien entendu nous contacter par mail pour toute information complémentaire ou prise de rendez-vous.
+        </p>
       </div>
       <div class="form-container">
         <contact-form />
@@ -21,20 +30,6 @@ export default {
 </script>
 <style>
 .form-container {
-  position: relative;
-  left: 10px;
-}
-
-@media screen and (min-width: 280px) {
-  .form-container {
-  position: relative;
-  left: 5px;
-}
-}
-@media screen and (min-width: 300px) {
-  .form-container {
-  position: relative;
-  left: 0;
-}
+  display: flex;
 }
 </style>

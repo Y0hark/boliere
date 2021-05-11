@@ -52,9 +52,8 @@ export default {
 
 .card-component {
   position: relative;
-  min-height: 60vh;
-  max-width: 50vw;
-  min-width: 50vw;
+  height: 60vh;
+  width: 50vw;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -118,37 +117,32 @@ export default {
     }
   @media screen and (min-width: 768px) {
     .card-component {
-      min-width: 40vw;
-      max-width: 40vw;
+      width: 40vw;
       border-radius: 5%;
   }
   }
   @media screen and (min-width: 850px) {
     .card-component {
-      min-height: 60vh;
-      max-width: 40vw;
-      min-width: 40vw;
+      height: 60vh;
+      width: 40vw;
     }
   }
 
   @media screen and (min-width: 1000px) {
     .card-component {
-      max-width: 35vw;
-      min-width: 35vw;
+      width: 35vw;
     }
   }
 
   @media screen and (min-width: 1150px) {
     .card-component {
-      max-width: 30vw;
-      min-width: 30vw;
+      width: 30vw;
     }
   }
 
   @media screen and (min-width: 1450px) {
     .card-component {
-      max-width: 25vw;
-      min-width: 25vw;
+      width: 25vw;
     }
   }
 

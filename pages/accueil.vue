@@ -1,5 +1,5 @@
 <template>
-  <div class="container background_image">
+  <div class="background_image container-accueil">
     <div>
       <h1 class="title">
         Bolière
@@ -21,6 +21,15 @@ export default {
 }
 </script>
 <style>
+.container-accueil {
+  display: flex;
+  margin: 0 auto;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
 .background_image{
     background-image: url('~assets/img/bg_raw.jpg');
     background-attachment: fixed;
