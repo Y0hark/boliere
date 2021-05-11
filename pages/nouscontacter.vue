@@ -2,11 +2,9 @@
   <div class="container">
     <div>
       <div>
-        <div>
-          <h3 class="subtitle">
-            Nous contacter
-          </h3>
-        </div>
+        <h3 class="subtitle">
+          Nous contacter
+        </h3>
       </div>
       <div class="contains-text">
         <p>
@@ -14,9 +12,9 @@
           Si jamais il ne peut vous répondre, il vous renverra automatiquement vers nous. <br><br>
           Vous pouvez bien entendu nous contacter par mail pour toute information complémentaire ou prise de rendez-vous.
         </p>
-      </div>
-      <div class="form-container">
-        <contact-form />
+        <div>
+          <contact-form />
+        </div>
       </div>
     </div>
   </div>
@@ -29,7 +27,7 @@ export default {
 }
 </script>
 <style>
-.form-container {
-  display: flex;
+.form {
+
 }
 </style>

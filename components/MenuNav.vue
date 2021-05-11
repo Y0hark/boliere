@@ -35,6 +35,11 @@
           </nuxt-link>
         </li>
         <li>
+          <nuxt-link :to="{ path: '/', hash: '#nosprojets' }">
+            Nos projets
+          </nuxt-link>
+        </li>
+        <li>
           <nuxt-link :to="{ path: '/', hash: '#nouscontacter' }">
             Nous contacter
           </nuxt-link>
@@ -214,7 +219,7 @@ export default {
       animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
     }
 
-    @for $i from 1 through 4 {
+    @for $i from 1 through 5 {
       li:nth-child(#{$i}) {
         &:after, a {
           animation-delay: calc((var(--duration) / 2) * #{$i} * 0.125);

@@ -23,7 +23,7 @@ html {
 .container {
     display: flex;
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 120vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -36,32 +36,27 @@ html {
     padding-bottom: 2rem;
   }
 
-  .title {
-    font-family: 'IBM Plex Serif', serif;
-    display: block;
-    font-weight: 300;
-    font-size: clamp(4rem, 2.5vw, 10rem);
-    letter-spacing: 1px;
-    margin-bottom: 1em;
-  }
+.title {
+  font-family: 'IBM Plex Serif', serif;
+  display: block;
+  font-weight: 300;
+  font-size: clamp(4rem, 2.5vw, 10rem);
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
 
-  .subtitle {
-    font-family: 'Noto Serif', serif;
-    font-weight: 300;
-    font-size: clamp(2rem, 2.5vw, 5rem);
-    word-spacing: 5px;
-    padding-bottom: 15px;
-    margin-bottom: 1em;
-  }
+.subtitle {
+  font-family: 'Noto Serif', serif;
+  font-weight: 300;
+  font-size: clamp(2rem, 2.5vw, 5rem);
+  word-spacing: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 1em;
+}
 
-  .contains-text {
-    width: 80%;
-    display: inline-block;
-    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
-    font-weight: lighter;
-  }
-
-  .emphase {
-    font-weight: bold;
-    font-size: clamp(0.9rem, 1.6vw, 1.6rem);
-  }
+.contains-text {
+  width: 80%;
+  display: inline-block;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-weight: lighter;
+}
