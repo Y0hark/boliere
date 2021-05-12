@@ -13,6 +13,7 @@
 </template>
 <script>
 export default {
+  name: 'CardPrestation',
   props: {
     title: { type: String, default: 'Card Title' },
     copy: { type: String, default: 'This is the card default description.' },
@@ -54,6 +55,7 @@ export default {
 
 .title-card-prestation {
   font-weight: bold;
+  color: black;
 }
 
 .icon, .title-card-prestation {

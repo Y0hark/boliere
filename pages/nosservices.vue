@@ -4,16 +4,16 @@
       <h3 class="subtitle">
         Nos services
       </h3>
-      <div class="cards-prestation">
-        <card-prestation v-for="card in cards" :key="card.title" :title="card.title" :copy="card.description" :icon="card.icon" />
+      <div class="cards-bandeau">
+        <card-service v-for="card in cards" :key="card.title" :title="card.title" :copy="card.description" :icon="card.icon" />
       </div>
     </div>
   </div>
 </template>
 <script>
-import CardPrestation from '~/components/CardPrestation.vue'
+import CardService from '~/components/CardService.vue'
 export default {
-  components: { CardPrestation },
+  components: { CardService },
   data () {
     return {
       cards: {
@@ -49,12 +49,12 @@ export default {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: #005f82b6;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-.cards-prestation {
+.cards-bandeau {
    max-width: 1024px;
    width: 100%;
    padding: 0 4%;

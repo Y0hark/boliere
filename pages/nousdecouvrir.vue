@@ -3,7 +3,7 @@
     <div>
       <div>
         <h3 class="subtitle">
-          Les présentations
+          Nous découvrir
         </h3>
       </div>
       <div class="contains-text">
