@@ -36,6 +36,7 @@ textarea {
     font-family: 'Noto Serif TC', serif;
 }
 .form-box {
+  display: inline-block;
   width: 80vw;
   padding: 40px;
   background: rgba(32, 32, 32, 0.6);;
@@ -83,7 +84,7 @@ textarea {
 
 .form-box .user-box label {
   position: absolute;
-  top:0;
+  top:-20px;
   left: 0;
   padding: 10px 0;
   font-size: clamp(0.75rem, 1.3vw, 1.5rem);
@@ -94,7 +95,7 @@ textarea {
 
 .form-box .user-box input:focus ~ label,
 .form-box .user-box input:valid ~ label {
-  top: -25px;
+  top: -40px;
   left: 0;
   color: #005f82e8;
 }

@@ -12,7 +12,7 @@
           Si jamais il ne peut vous répondre, il vous renverra automatiquement vers nous. <br><br>
           Vous pouvez bien entendu nous contacter par mail pour toute information complémentaire ou prise de rendez-vous.
         </p>
-        <div>
+        <div class="contact-form">
           <contact-form />
         </div>
       </div>
@@ -27,7 +27,7 @@ export default {
 }
 </script>
 <style>
-.form {
-
+.contact-form {
+  padding-top: 25px;
 }
 </style>

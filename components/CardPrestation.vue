@@ -1,7 +1,7 @@
 <template>
   <div class="card-prestation">
     <div class="icon">
-      <img src="~assets/icons/site_sur_mesure.svg">
+      <img :src="require(`~/assets/icons/${icon}.png`)" class="icon">
     </div>
     <p class="title-card-prestation">
       {{ title }}
@@ -15,7 +15,8 @@
 export default {
   props: {
     title: { type: String, default: 'Card Title' },
-    copy: { type: String, default: 'This is the card default description.' }
+    copy: { type: String, default: 'This is the card default description.' },
+    icon: { type: String, default: 'CardPNG' }
   }
 }
 </script>
@@ -23,7 +24,7 @@ export default {
 .card-prestation {
    width: 20vw;
    height: 20vh;
-   background-color: #292929;
+   background-color: #ffffffa1;
    margin: 10px;
    border-radius: 10px;
    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
@@ -42,17 +43,21 @@ export default {
 .icon {
    margin: 0 auto;
    width: 100%;
-   height: 80px;
+   height: 70px;
    max-width:80px;
-   background: linear-gradient(90deg, #3d88a3b6 0%, #005f82b6 40%, rgba(0, 0, 0, 0.28) 60%);
-   border-radius: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
-   color: white;
    transition: all 0.8s ease;
    background-position: 0px;
-   background-size: 200px;
+}
+
+.title-card-prestation {
+  font-weight: bold;
+}
+
+.icon, .title-card-prestation {
+  margin-top: 20px;
 }
 
 .card-prestation .card-prestation-text {
@@ -61,7 +66,7 @@ export default {
    font-size: 13px;
    text-align: center;
    margin-top: 20px;
-   color: white;
+   color: rgb(0, 0, 0);
    font-weight: 200;
    letter-spacing: 2px;
    opacity: 0;
@@ -74,19 +79,11 @@ export default {
    opacity: 1;
    max-height:40px;
 }
-
-.card-prestation:hover .icon {
-   background-position: -120px;
-   transition: all 0.3s ease;
+.card-prestation:hover .icon, .card-prestation-text {
+  transition: all 0.3s ease;
+  margin-top: 0px;
 }
-
-.card-prestation:hover .icon i {
-   background: linear-gradient(90deg, #3d88a3b6, #005f82b6);
-   opacity: 1;
-   transition: all 0.3s ease;
-}
-
 .card-prestation:hover:hover {
-   height: 270px;
+   height: 260px;
 }
 </style>
