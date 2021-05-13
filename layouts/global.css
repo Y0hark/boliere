@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Noto+Serif&family=Noto+Serif+TC&display=swap');
 
+@font-face {
+  font-family: "High Tide";
+  src: local("High Tide"), url(~/assets/fonts/High_Tide.ttf) format("truetype");
+}
+
 html {
   font-family: 'Noto Serif TC', serif;
   font-size: clamp(1rem, 2.5vw, 2rem);
@@ -37,12 +42,12 @@ html {
   }
 
 .title {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'High Tide';
   display: block;
-  font-weight: 300;
-  font-size: clamp(4rem, 2.5vw, 10rem);
+  font-weight: normal;
+  font-size: clamp(6rem, 3vw, 15rem);
   letter-spacing: 1px;
-  margin-bottom: 1em;
+  margin-bottom: 60px;
 }
 
 .subtitle {

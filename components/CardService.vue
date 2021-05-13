@@ -1,12 +1,12 @@
 <template>
-  <div class="card-prestation">
+  <div class="card-services">
     <div class="icon">
       <img :src="require(`~/assets/icons/${icon}.png`)" class="icon">
     </div>
-    <p class="title-card-prestation">
+    <p class="title-card-services">
       {{ title }}
     </p>
-    <p class="card-prestation-text">
+    <p class="card-services-text">
       {{ copy }}
     </p>
   </div>
@@ -22,9 +22,9 @@ export default {
 }
 </script>
 <style>
-.card-prestation {
-   width: 20vw;
-   height: 20vh;
+.card-services {
+   width: 200px;
+   height: 180px;
    background-color: #ffffffa1;
    margin: 10px;
    border-radius: 10px;
@@ -33,10 +33,9 @@ export default {
    font-size: 16px;
    transition: all 0.3s ease;
    position: relative;
-   display: inline-block;
+   display: block;
    justify-content: center;
    align-items: center;
-   flex-direction: column;
    cursor: pointer;
    transition: all 0.3s ease;
 }
@@ -53,16 +52,16 @@ export default {
    background-position: 0px;
 }
 
-.title-card-prestation {
+.title-card-services {
   font-weight: bold;
   color: black;
 }
 
-.icon, .title-card-prestation {
-  margin-top: 20px;
+.title-card-services {
+  margin-top: 25px;
 }
 
-.card-prestation .card-prestation-text {
+.card-services .card-services-text {
    width: 80%;
    margin: 0 auto;
    font-size: 13px;
@@ -76,16 +75,16 @@ export default {
    transition: all 0.3s ease;
 }
 
-.card-prestation:hover .card-prestation-text {
+.card-services:hover .card-services-text {
    transition: all 0.3s ease;
    opacity: 1;
    max-height:40px;
 }
-.card-prestation:hover .icon, .card-prestation-text {
+.card-services:hover .icon, .card-services-text {
   transition: all 0.3s ease;
   margin-top: 0px;
 }
-.card-prestation:hover:hover {
-   height: 260px;
+.card-services:hover:hover {
+   height: 280px;
 }
 </style>

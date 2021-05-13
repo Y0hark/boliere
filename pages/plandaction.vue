@@ -1,47 +1,93 @@
 <template>
-  <div class="plan-action-container">
+  <div class="bandeau-container">
     <div>
       <h3 class="subtitle">
         Notre plan d'action
       </h3>
       <div class="cards-bandeau">
-        <card-action v-for="card in cards" :key="card.title" :icon="card.icon" :title="card.title" />
+        <div v-for="(card, index) in cards" :key="card.title" class="card-action-container">
+          <card-action :id="`card${index}`" :icon="card.icon" :title="card.title" />
+          <arrow-hover-comp :id="`arrow${index}`" class="arrows" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import ArrowHoverComp from '~/components/ArrowHoverComp.vue'
 import CardAction from '~/components/CardAction.vue'
 export default {
-  components: { CardAction },
+  components: { CardAction, ArrowHoverComp },
   data () {
     return {
-      cards: {
-        conception: {
+      cards: [
+        {
           title: 'Conception',
           icon: 'conception'
         },
-        planification: {
+        {
           title: 'Planification',
           icon: 'planification'
         },
-        realisation: {
+        {
           title: 'Réalisation',
           icon: 'realisation'
         },
-        livraison: {
+        {
           title: 'Livraison',
           icon: 'livraison'
         },
-        accompagnement: {
+        {
           title: 'Accompagnement',
           icon: 'accompagnement'
         }
-      }
+      ]
+    }
+  },
+  mounted () {
+    this.hideLastArrow()
+  },
+  methods: {
+    hideLastArrow () {
+      document.querySelector('#arrow4').classList.add('hidden_arrow')
+      document.querySelector('#card4').classList.add('resize-card')
     }
   }
 }
+
 </script>
 <style>
+.cards-bandeau{
+  max-width: 1024px;
+  width: 100%;
+  padding: 0 4%;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.card-action-container {
+  display: inline-block;
+}
+.arrows {
+  display: none;
+}
 
+@media screen and (min-width: 1150px){
+  .arrows {
+    display: flex;
+  }
+  .cards-bandeau{
+  display: flex;
+}
+
+  .card-action-container {
+    display: flex;
+    width: 25%;
+  }
+  .hidden_arrow {
+    display: none;
+  }
+}
 </style>

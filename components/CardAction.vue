@@ -1,14 +1,11 @@
 <template>
-  <div>
-    <div class="card-action">
-      <div class="icon">
-        <img :src="require(`~/assets/icons/${icon}.png`)" class="icon">
-      </div>
-      <p class="title-card-action">
-        {{ title }}
-      </p>
+  <div class="card-action">
+    <div class="icon">
+      <img :src="require(`~/assets/icons/${icon}.png`)" class="icon">
     </div>
-    <span class="point" />
+    <p class="title-card-action">
+      {{ title }}
+    </p>
   </div>
 </template>
 <script>
@@ -22,8 +19,8 @@ export default {
 </script>
 <style>
 .card-action {
-   width: 20vw;
-   height: 20vh;
+   width: 180px;
+   height: 180px;
    background-color: #ffffffa1;
    margin: 10px;
    border-radius: 10px;
@@ -32,24 +29,12 @@ export default {
    font-size: 16px;
    transition: all 0.3s ease;
    position: relative;
-   display: inline-block;
+   display: block;
    justify-content: center;
    align-items: center;
-   flex-direction: column;
    cursor: pointer;
    transition: all 0.3s ease;
 }
-
-.point {
-   content: "";
-   background-color: white;
-   display: block;
-   width: 50px;
-   height: 25px;
-   border-radius: 100%;
-   display: flex;
-}
-
 .icon {
    margin: 0 auto;
    width: 100%;

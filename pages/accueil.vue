@@ -1,8 +1,9 @@
 <template>
   <div class="background_image container-accueil">
     <div>
+      <img src="~/assets/img/logo_raw.png" class="logo">
       <h1 class="title">
-        Bolière
+        boliere
       </h1>
 
       <h3 class="subtitle">
@@ -37,5 +38,13 @@ export default {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+}
+
+.logo {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  top: 0;
+  left: 0;
 }
 </style>
