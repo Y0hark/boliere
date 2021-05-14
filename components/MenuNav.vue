@@ -20,29 +20,19 @@
     <nav class="main-navigation" @click="clickOnNav">
       <ul>
         <li>
-          <nuxt-link :to="{ path: '/', hash: '#accueil' }">
-            Accueil
-          </nuxt-link>
+          <a href="#accueil">Accueil</a>
         </li>
         <li>
-          <nuxt-link :to="{ path: '/', hash: '#nousdecouvrir' }">
-            Nous découvrir
-          </nuxt-link>
+          <a href="#nousdecouvrir">Nous découvrir</a>
         </li>
         <li>
-          <nuxt-link :to="{ path: '/', hash: '#nosprestations' }">
-            Nos prestations
-          </nuxt-link>
+          <a href="#nosprestations">Nos prestations</a>
         </li>
         <li>
-          <nuxt-link :to="{ path: '/', hash: '#nosprojets' }">
-            Nos projets
-          </nuxt-link>
+          <a href="#nosprojets">Nos projets</a>
         </li>
         <li>
-          <nuxt-link :to="{ path: '/', hash: '#nouscontacter' }">
-            Nous contacter
-          </nuxt-link>
+          <a href="#nouscontacter">Nous contacter</a>
         </li>
       </ul>
     </nav>

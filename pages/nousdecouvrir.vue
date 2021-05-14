@@ -41,7 +41,7 @@ export default {
         name: 'Samuel',
         description: `L'expérience freelance est pour moi l'occasion parfaite pour développer une expertise.
         Mon C.V vous en diras plus sur moi!`,
-        button: 'Le CV de Sammy'
+        button: 'Le CV de Samuel'
       }
     }
   }
@@ -49,7 +49,7 @@ export default {
 </script>
 <style>
 .card-container {
-  padding-top: 1rem;
+  padding-top: 80px;
 }
 .facecard {
   width: 100%;

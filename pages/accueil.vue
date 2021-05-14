@@ -1,7 +1,7 @@
 <template>
   <div class="background_image container-accueil">
     <div>
-      <img src="~/assets/img/logo_raw.png" class="logo">
+      <a href="#accueil"><img src="~/assets/img/logo_raw.png" class="logo"></a>
       <h1 class="title">
         boliere
       </h1>
@@ -42,9 +42,11 @@ export default {
 
 .logo {
   position: fixed;
-  width: 200px;
-  height: auto;
-  top: 0;
+  top: 1%;
   left: 0;
+  --size: calc(3rem + 5vmin);
+  width: var(--size);
+  height: var(--size);
+  z-index: 2;
 }
 </style>

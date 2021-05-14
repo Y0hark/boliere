@@ -28,6 +28,6 @@ export default {
 </script>
 <style>
 .contact-form {
-  padding-top: 25px;
+  padding-top: 50px;
 }
 </style>
