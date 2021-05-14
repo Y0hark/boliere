@@ -1,7 +1,7 @@
 <template>
   <div class="card-action">
     <div class="icon">
-      <img :src="require(`~/assets/icons/${icon}.png`)" class="icon">
+      <img :src="require(`~/assets/icons/${icon}`)" class="icon">
     </div>
     <p class="title-card-action">
       {{ title }}
@@ -37,9 +37,8 @@ export default {
 }
 .icon {
    margin: 0 auto;
-   width: 100%;
    height: 68px;
-   max-width:80px;
+   width:80px;
    display: flex;
    justify-content: center;
    align-items: center;

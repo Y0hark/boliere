@@ -47,6 +47,6 @@ export default {
   --size: calc(3rem + 5vmin);
   width: var(--size);
   height: var(--size);
-  z-index: 2;
+  z-index: 1;
 }
 </style>

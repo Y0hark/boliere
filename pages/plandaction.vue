@@ -23,23 +23,23 @@ export default {
       cards: [
         {
           title: 'Conception',
-          icon: 'conception'
+          icon: 'conception.svg'
         },
         {
           title: 'Planification',
-          icon: 'planification'
+          icon: 'planification.svg'
         },
         {
           title: 'Réalisation',
-          icon: 'realisation'
+          icon: 'realisation.svg'
         },
         {
           title: 'Livraison',
-          icon: 'livraison'
+          icon: 'livraison.svg'
         },
         {
           title: 'Accompagnement',
-          icon: 'accompagnement'
+          icon: 'accompagnement.svg'
         }
       ]
     }
