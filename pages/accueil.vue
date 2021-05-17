@@ -6,7 +6,7 @@
         boliere
       </h1>
 
-      <h3 class="subtitle">
+      <h3 class="subtitle agence-title">
         Agence Web @Marseille
       </h3>
 
@@ -42,11 +42,15 @@ export default {
 
 .logo {
   position: fixed;
-  top: 5%;
+  top: 3%;
   left: 3%;
   --size: calc(1rem + 3vmin);
   width: var(--size);
   height: var(--size);
   z-index: 1;
+}
+
+.agence-title {
+  text-decoration: none;
 }
 </style>

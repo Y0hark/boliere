@@ -75,29 +75,84 @@ export default {
 }
 
 .prev, .next {
+  position: relative;
   cursor: pointer;
-  color: white;
   padding: 1rem;
+  color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 50px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-@media screen and (min-width: 768px) {
-  .prev, .next {
-    padding: 2rem;
+@media screen and (min-width: 550px) {
+  .next, .prev {
+    bottom: 250px;
+  }
+  .prev {
+    right: 200px;
+  }
+
+  .next {
+    left: 200px;
   }
 }
-@media screen and (min-width: 1000px) {
-  .prev, .next {
-    padding: 3rem;
+@media screen and (min-width: 640px) {
+  .prev {
+    right: 230px;
+  }
+
+  .next {
+    left: 230px;
   }
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 720px) {
+  .prev {
+    right: 280px;
+  }
+
+  .next {
+    left: 280px;
+  }
+}
+@media screen and (min-width: 950px) {
   .prev, .next {
-    padding: 5rem;
+    bottom: 300px;
+  }
+  .prev {
+    right: 350px;
+  }
+
+  .next {
+    left: 350px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .prev {
+    right: 420px;
+  }
+
+  .next {
+    left: 420px;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .prev {
+    right: 500px;
+  }
+
+  .next {
+    left: 500px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .prev {
+    right: 600px;
+  }
+
+  .next {
+    left: 600px;
   }
 }
 

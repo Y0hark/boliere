@@ -56,6 +56,10 @@ export default {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+.bandeau-container .subtitle {
+  text-decoration-color: white;
+}
 .cards-bandeau-services {
    max-width: 1024px;
    width: 100%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container prestations">
     <div>
       <h3 class="subtitle">
         Nos préstations
@@ -20,4 +20,8 @@ export default {
 }
 </script>
 <style>
+.prestations {
+  display: block;
+  padding-top: 120px;
+}
 </style>
