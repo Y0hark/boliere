@@ -1,6 +1,6 @@
-# boliere
+# Bolière
 
-## Build Setup
+## Agence Web @Marseille
 
 ```bash
 # install dependencies
