@@ -28,7 +28,7 @@ html {
 .container {
     display: flex;
     margin: 0 auto;
-    min-height: 100vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -39,12 +39,6 @@ html {
     background-repeat: no-repeat;
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
-
-@media screen and (min-width: 768px){
-  .container {
-    min-height: 110vh;
-  }
 }
 
 .title {
