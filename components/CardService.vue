@@ -85,6 +85,6 @@ export default {
   margin-top: 0px;
 }
 .card-services:hover:hover {
-   height: 280px;
+   height: 230px;
 }
 </style>

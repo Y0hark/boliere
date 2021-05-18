@@ -15,11 +15,11 @@
       </div>
       <div class="card-container">
         <div class="facecard">
-          <card-personne-component id="alan" :name="nala.name" :description="nala.description" :button-name="nala.button" />
+          <card-personne-component id="alan" :name="nala.name" :description="nala.description" :button-name="nala.button" :link="nala.link" />
         </div>
         <div class="vertical_line" />
         <div class="facecard">
-          <card-personne-component id="sammy" :name="sammy.name" :description="sammy.description" :button-name="sammy.button" />
+          <card-personne-component id="sammy" :name="sammy.name" :description="sammy.description" :button-name="sammy.button" :link="sammy.link" />
         </div>
       </div>
     </div>
@@ -35,13 +35,15 @@ export default {
         name: 'Alan',
         description: `Ce choix de l'auto-entreprise est motivé par mon désir de proposer du concret après les années de théorie.
         N’hésitez pas à visiter mon site!`,
-        button: 'Le CV d\'Alan'
+        button: 'Le CV d\'Alan',
+        link: 'https://alangarbo.com'
       },
       sammy: {
         name: 'Samuel',
         description: `L'expérience freelance est pour moi l'occasion parfaite pour développer une expertise.
         Mon C.V vous en diras plus sur moi!`,
-        button: 'Le CV de Samuel'
+        button: 'Le CV de Samuel',
+        link: 'https://samuelgaliere.com'
       }
     }
   }

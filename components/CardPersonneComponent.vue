@@ -8,9 +8,10 @@
           </h2>
           <p class="copy">
             {{ description }}
-          </p><button class="btn-card-person">
+          </p>
+          <a class="btn-card-person" :href="link" target="_blank">
             {{ buttonName }}
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -26,7 +27,10 @@ export default {
       type: String, default: 'Here goes nothing!'
     },
     buttonName: {
-      type: String, default: 'Press me like your GF tits'
+      type: String, default: 'Default copy'
+    },
+    link: {
+      type: String, default: 'https://www.google.fr'
     }
   }
 }
@@ -186,6 +190,7 @@ export default {
   color: white;
   background-color: #005f82b6;
   border: none;
+  text-decoration: none;
 
   &:hover {
     background-color: lighten(#005f82b6, 5%);
