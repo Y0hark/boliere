@@ -1,15 +1,15 @@
 <template>
   <div class="typewriter">
     <span class="chevrons">&lsaquo;</span>
-    <nuxt-link class="link" :to="{ path: '/', hash: '#nousdecouvrir' }">
+    <a class="link" href="#nousdecouvrir">
       nous découvrir
-    </nuxt-link>
-    <nuxt-link class="link" :to="{ path: '/', hash: '#nosprestations' }">
+    </a>
+    <a class="link" href="#nosprestations">
       nos prestations
-    </nuxt-link>
-    <nuxt-link class="link" :to="{ path: '/', hash: '#nouscontacter' }">
+    </a>
+    <a class="link" href="#nouscontacter">
       nous contacter
-    </nuxt-link>
+    </a>
     <span class="chevrons">/&rsaquo;</span>
   </div>
 </template>
