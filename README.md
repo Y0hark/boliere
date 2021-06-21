@@ -2,6 +2,9 @@
 
 ## Agence Web @Marseille
 
+Le répo de notre site web, fait entièrement avec **Nuxt.js** et un peu de CSS.
+Il est hébergé en statique sur **Firebase Hosting**.
+
 ```bash
 # install dependencies
 $ npm install
