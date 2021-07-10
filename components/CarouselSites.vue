@@ -28,8 +28,8 @@ export default {
                             de recheche de stage et alternance au début
                             de l'année 2021.`,
           image_showcase: 'alan_site_screen.png',
-          btn: 'Accéder au site',
-          link: 'https://alangarbo.com'
+          btn: 'Voir le projet sur GitHub',
+          link: 'https://github.com/NalaGarbo/OnlineResume'
         },
         samuel_site: {
           id: 'site_samuel_galiere',
@@ -38,8 +38,8 @@ export default {
                             de recheche de stage et alternance au début
                             de l'année 2021.`,
           image_showcase: 'samuel_site_screen.png',
-          btn: 'Accéder au site',
-          link: 'https://samuelgaliere.com'
+          btn: 'Voir le projet sur GitHub',
+          link: 'https://github.com/Y0hark/OnlineResume'
         }
       }
     }
